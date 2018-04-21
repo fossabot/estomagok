@@ -1,0 +1,17 @@
+{
+  "name": "estomago",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nexmo": "^2.2.0",
+    "node-schedule": "^1.3.0",
+    "simple-node-logger": "^0.93.37"
+  }
+}
