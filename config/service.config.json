@@ -1,0 +1,5 @@
+{
+  "nombre": "Estom",
+  "descripcion": "The nodejs.org example web server.",
+  "logLevel": "all"
+}

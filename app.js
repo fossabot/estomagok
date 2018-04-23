@@ -1,3 +1,5 @@
-var Job = require('./job');
-var Sms = require('./sms')
-Job.start(new Sms())
+var JSendSms = require('./src/jobs/JSendSms');
+var Sms = require('./src/core/sms');
+
+new JSendSms().start(new Sms());
+//new Sms().send('Prueba')

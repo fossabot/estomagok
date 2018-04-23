@@ -1,18 +1,18 @@
-const  Nexmo = require('nexmo');
-const SMS_CONFIG =  require('./sms.config.json');
+const Nexmo = require('nexmo');
+const SMS_CONFIG = require('../../config/sms.config.json');
 
 class Sms {
   constructor() {
     this.send = this.send.bind(this);
     try {
       this.nexmo = new Nexmo(SMS_CONFIG.NEXMO_CONFIG);
-    } catch (lerrsor) {
+    } catch (error) {
       this.handleError(error);
     }
   }
 
-  send(mesg) {
-    this.nexmo.message.sendSms(SMS_CONFIG.from, SMS_CONFIG.to, mesg,
+  send(mesg, from = SMS_CONFIG.from, to = SMS_CONFIG.to) {
+    this.nexmo.message.sendSms(from, to, mesg,
       (err, response) => err ?
       this.handleError(err) :
       this.handleResponse(response));
@@ -27,4 +27,3 @@ class Sms {
   }
 }
 module.exports = Sms;
-ñ
