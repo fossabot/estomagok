@@ -1,4 +1,4 @@
-const Service = require('node-windows').Service;
+/*const Service = require('node-windows').Service;
 const SERVICE_CONFIG = require('../../config/service.config.json');
 
 const svc = new Service({
@@ -21,4 +21,4 @@ if(process.argv[2] === '--install'){
 } else if(process.argv[2] === '--uninstall'){
   svc.uninstall();  
 }
-
+*/
